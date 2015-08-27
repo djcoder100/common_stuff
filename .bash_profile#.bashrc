@@ -35,8 +35,10 @@ alias gr="git rebase -i master"
 alias todo="gg TODO"
 
 ## Show hidden files ##
-alias l.='ls -d .*'
-alias la='ls -a'
+alias l.='ls -d .* --color=auto'
+alias la='ls -a --color=auto'
+alias ll='ls -lart --color=auto'
+alias ls='ls --color=auto'
 
 ## get rid of command not found ##
 alias cd..='cd ..'
@@ -52,3 +54,11 @@ alias .5='cd ../../../../..'
 alias update='BRANCH=$(current_branch);git checkout master;git pull;git checkout $BRANCH'
 alias submit='update;git rebase -i master;git push origin $BRANCH --force' 
 alias save='git push origin $(current_branch)'
+
+# my aliases
+alias code='cd /d/SOURCE'
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
