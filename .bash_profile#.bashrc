@@ -62,3 +62,8 @@ alias code='cd /d/SOURCE'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+
+PATH=$PATH:~/bin
+export PATH
+echo $PATH
+pwd
